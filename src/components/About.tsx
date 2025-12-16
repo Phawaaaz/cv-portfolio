@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import hero_image from "../assets/hero_img.png";
+import sherif3 from "../assets/sherif3.png";
 import { GoDotFill } from "react-icons/go";
 import { CiLocationOn } from "react-icons/ci";
 import { BsGlobe2 } from "react-icons/bs";
@@ -30,12 +30,12 @@ const About = () => {
     <section
       ref={sectionRef}
       data-section
-      className="py-24 relative overflow-hidden bg-[#131022] min-h-screen">
+      className="py-24 relative overflow-hidden bg-[#131022]">
       <div className="absolute inset-0 opacity-5 bg-[film-grain]" />
 
-      <div className="relative z-10 flex flex-col items-center justify-between max-w-5xl mx-auto px-6 w-full lg:flex-row">
+      <div className="relative z-10 flex flex-col items-center justify-between max-w-5xl mx-auto px-6 w-full md:flex-row">
         <div
-          className={`transition-all duration-1000 lg:w-1/2 ${
+          className={`transition-all duration-1000 md:w-1/2 ${
             isVisible
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-12"
@@ -73,14 +73,20 @@ const About = () => {
         </div>
 
         <div
-          className={`lg:w-1/2 transition-all duration-1000 delay-500 ${
+          className={`md:w-1/2 transition-all duration-1000 delay-500  flex justify-end mt-[40px] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-          <img
-            src={hero_image}
-            alt=""
-            className="shadow-xl shadow-blue-500/10"
-          />
+          <div className="w-auto lg:w-[400px] h-[400px] shadow-2xl rounded-lg overflow-hidden relative">
+            <div className="absolute h-[70px] w-full bottom-2 bg-gradient-to-r from-[#171c2e]/95 to-[#2f2d3b]/80 px-[20px] py-2">
+              <p className="text-white font-semibold text-base">Jamiu Sherif</p>
+              <p className="text-[#2e16b5] text-[18px] font-bold">Frontend Developer</p>
+            </div>
+            <img
+              src={sherif3}
+              alt=""
+              className="w-full rounded-lg object-cover h-full shadow-custom-inset"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -40,7 +40,7 @@ const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-between max-w-5xl mx-auto px-6 w-full md:flex-row">
         <div
-          className={`transition-all duration-1000 lg:w-1/2 ${
+          className={`transition-all duration-1000 md:w-1/2 ${
             textVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -83,7 +83,7 @@ const Hero = () => {
         </div>
 
         <div
-          className={`lg:w-1/2 transition-all duration-1000 delay-500 mt-[20px] md:mt-0 ${
+          className={`md:w-1/2 transition-all duration-1000 delay-500 mt-[20px] md:mt-0 ${
             textVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
@@ -91,14 +91,13 @@ const Hero = () => {
           <img
             src={hero_image}
             alt=""
-            className="shadow-xl shadow-blue-500/10"
+            className="w-full h-[400px] md:w-[700px] md:h-[500px] object-cover"
           />
         </div>
       </div>
 
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 opacity-10 bg-film-grain " />
-        {/* animate-grain */}
       </div>
     </section>
   );

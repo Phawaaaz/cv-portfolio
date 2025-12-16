@@ -49,7 +49,7 @@ const Preload = ({ onComplete }: PreloadProps) => {
       </div>
 
       <div className="relative z-10 text-center px-6">
-        {/* Initials/Logo */}
+      
         <div
           className={`transition-all duration-1000 ${
             progress > 20 ? "opacity-100 scale-100" : "opacity-0 scale-95"
@@ -64,7 +64,7 @@ const Preload = ({ onComplete }: PreloadProps) => {
           </div>
         </div>
 
-        {/* Loading Bar */}
+
         <div className="w-64 mx-auto">
           <div className="h-px bg-[#F5F3EF]/10 rounded-full overflow-hidden">
             <div

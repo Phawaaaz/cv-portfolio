@@ -26,7 +26,7 @@ const Projects = () => {
     <section
       ref={sectionRef}
       data-section
-      className="py-16 relative overflow-hidden bg-[#131022] min-h-screen">
+      className="py-16 relative overflow-hidden bg-[#131022]">
       <div className="absolute inset-0 opacity-5 bg-[film-grain]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 w-full lg:flex-row gap-[50px]">
