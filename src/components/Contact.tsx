@@ -236,10 +236,10 @@ const Contact = () => {
                       <div className="h-[50px] w-[50px] rounded-md flex items-center justify-center bg-[#131022]">
                         <MdMail className="w-5 h-5 text-[#3713ec]" />
                       </div>
-                      <a href="mailto:jamiusherif578@gmail.com">
+                      <a href="mailto:jamiusherif57@gmail.com">
                         <p className="text-[13px] text-[#7e7b93]">Email me</p>
                         <span className="font-mono text-sm text-[#fefefe]">
-                          jamiusherif578@gmail.com
+                          jamiusherif57@gmail.com
                         </span>
                       </a>
                     </div>
